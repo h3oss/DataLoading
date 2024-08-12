@@ -1,0 +1,15 @@
+CREATE DATABASE WordLoaderDB
+GO
+
+USE WordLoaderDB
+GO
+
+CREATE TABLE Words (
+    ID INT PRIMARY KEY,
+    Word VARCHAR(50) NOT NULL,
+    Count INT NOT NULL
+)
+GO
+
+CREATE UNIQUE INDEX IX_Word ON Words (Word)
+GO
